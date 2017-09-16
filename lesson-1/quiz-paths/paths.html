@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz - Paths </title>
+</head>
+<body>
+	<!-- Canvas -->
+	<canvas id="myCanvas" width="300" height="300"></canvas>
+	
+	<!-- Script -->
+	<script type="text/javascript">
+		var c = document.getElementById('myCanvas');
+
+		var ctx = c.getContext('2d');
+
+		// Rectangle
+		ctx.strokeRect(50, 50, 100, 100);
+		
+		// Creating Triangle
+		ctx.beginPath();
+		ctx.moveTo(75,75);
+		ctx.lineTo(125,75);
+		ctx.lineTo(125,125);
+		ctx.fill();
+		ctx.closePath();
+		
+	</script>
+
+</body>
+
+</html>
